@@ -1,0 +1,46 @@
+
+.social-container{
+    width: 400px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.social-container #icon-cover{
+    padding: 5px;
+    border-radius: 50%;
+    width: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+    cursor: pointer;
+    transition: all 0.9s;
+    border: 1px solid white;
+}
+
+.social-container #icon-cover i{
+    font-size: 20px;
+}
+
+.social-container #icon-cover:hover{
+    filter: drop-shadow(1px 1px 20px rgb(251, 20, 20));
+    background-color: rgb(7, 122, 90);
+    i{
+        font-size: 25px;
+    }
+}
+
+@media (max-width: 700px){
+    .social-container{
+        width: 100%;
+        margin-top: 15px;
+    }
+    .social-container #icon-cover i{
+        font-size: 1.5rem;
+    }
+}
+
+

@@ -1,0 +1,41 @@
+#skills{
+    width: 100%;
+    height: 100%;
+    background-color: rgb(37, 33, 33);
+    color: white;
+}
+
+.radical-circular{
+    height: 100vh;
+    /* background: repeating-radial-gradient(rgba(0,0,0,0.4) 2px, #f5f5f5 5px, #f5f5f5 90px); */
+    background: repeating-radial-gradient(rgba(255,255,255,0.4) 2px, #1b1b1b 5px, #1b1b1b 90px);
+}
+
+.skills-text{
+    font-size: 1vw;
+}
+
+.center-skill{
+    font-size: 1.4vw;
+}
+
+.skills-text:hover{
+    background-color: black;
+    color: white;
+    border: 2px solid white;
+    transition: all 0.5s;
+}
+
+.center-skill:hover{
+    background-color: white;
+    color: black;
+    border: 2px black solid;
+    transition: all 0.5s;
+}
+
+@media (max-width: 750px){
+    .skills-h2{
+        font-size: 30px;
+    }
+    
+}

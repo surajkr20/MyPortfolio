@@ -1,0 +1,55 @@
+
+.nav-container{
+    background-color: rgb(38, 30, 30);
+    position: fixed;
+    top: 0;
+}
+
+#list:hover{
+    color: rgb(203, 79, 79);
+    border-bottom: 2px solid white;
+}
+
+.mobile-menu{
+    position: absolute;
+    top: 83px;
+    width: 60%;
+    height: 100vh;
+    right: 0;
+    font-size: 1.2rem;
+    transform: translateX(100%);
+    transition: all 0.5s;
+    background-color: rgb(47, 13, 13);
+}
+
+.activemobile{
+    transform: translateX(0%);
+}
+
+.hamburger{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    display: none;
+    cursor: pointer;
+}
+
+.ham{
+    width: 35px;
+    height: 2px;
+    background-color: aquamarine;
+}
+
+@media (max-width:700px) {
+    .desktop-menu{
+        display: none;
+    }
+    .hamburger{
+        display: flex;
+    }
+    .nav-container{
+        justify-content: space-between;
+    }
+}
