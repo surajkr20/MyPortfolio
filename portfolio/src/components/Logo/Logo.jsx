@@ -23,7 +23,7 @@ const Logo = () => {
   })
 
   return (
-    <div className="flex items-center justify-center" id="link">
+    <div className="dark:border-light border-2 rounded-full dark:text-light text-dark sm:ml-[10%]" id="link">
       <motion.div
         className="logo w-10 h-10 flex items-center text-2xl justify-center rounded-full font-bold cursor-pointer"
         whileHover={{
@@ -31,7 +31,7 @@ const Logo = () => {
           transition:{duration:1, repeat: Infinity}
         }}
       >
-        <span id='logo-text' className='text-[20px]'>SK</span>
+        <span id='logo-text' className='text-[16px]'>SK</span>
       </motion.div>
     </div>
   );

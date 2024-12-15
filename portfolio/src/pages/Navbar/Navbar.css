@@ -1,13 +1,7 @@
 
 .nav-container{
-    background-color: rgb(38, 30, 30);
     position: fixed;
     top: 0;
-}
-
-#list:hover{
-    color: rgb(203, 79, 79);
-    border-bottom: 2px solid white;
 }
 
 .mobile-menu{
@@ -20,6 +14,7 @@
     transform: translateX(100%);
     transition: all 0.5s;
     background-color: rgb(47, 13, 13);
+    color: wheat;
 }
 
 .activemobile{
@@ -39,7 +34,7 @@
 .ham{
     width: 35px;
     height: 2px;
-    background-color: aquamarine;
+    background-color: black;
 }
 
 @media (max-width:700px) {
