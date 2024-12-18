@@ -11,11 +11,11 @@
 .social-container #icon-cover{
     padding: 5px;
     border-radius: 50%;
-    width: 45px;
+    width: 40px;
+    height: 40px;
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: rgb(80, 42, 42);
     cursor: pointer;
     transition: all 0.9s;
     border: 1px solid white;

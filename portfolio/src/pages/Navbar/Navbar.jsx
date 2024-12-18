@@ -25,7 +25,7 @@ const Navbar = () => {
   return (
     <>
       <nav className="nav-container dark:bg-dark dark:text-light bg-light text-dark shadow-md dark:border-b-2 dark:border-b-light
-      flex flex-row items-center justify-between w-full mx-auto sm:px-16 px-6 py-2 z-10">
+      flex flex-row items-center justify-between w-full mx-auto sm:px-20 px-6 py-2 z-10">
         {/* darkMode toggle button */}
         <button
           onClick={() => setMode(mode === "light" ? "dark" : "light")}

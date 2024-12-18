@@ -1,7 +1,10 @@
+import coc from '../assets/img/coc.png'
+import bseb from '../assets/img/BSEB.jpeg'
+import logo from '../assets/img/12th school logo.png'
 
 import {
-    car,
     contact,
+    car,
     css,
     estate,
     express,
@@ -94,29 +97,37 @@ export const skills = [
 export const experiences = [
     {
         title: "Bachalor's of Computer Application",
-        company_name: "College of Commerce, Arts & Science, patna",
+        company_name: "College of Commerce, Arts & Science, patna || 2022-2025",
         iconBg: "#accbe1",
-        date: "May 2022 - May 2025",
+        schoolInfoLink: "https://www.cocaspatna.ac.in/",
+        icon: coc,
         points: [
-            
+            "Gained proficiency in programming languages like C, C++, Java and Javascript",
+            "Diving deep into advanced programming concepts, through learning Data Structure and algorithms with java.",
+            "Building projects using, React.js, Node.js, Express.js, and MongoDB ( MERN stack )."
         ],
     },
     {
-        title: "I.SC (Mathematics)",
-        company_name: "Sahid Ramanand Ramgovind Singh +2 High School, Punpun, Patna",
+        title: "I.SC (Mathematics) || BSEB",
+        company_name: "SAHID RAMANAND SINGH RAM GOBIND H.S. PUNPUN | 2020-2022",
         iconBg: "#fbc3bc",
-        date: "April 2020 - March 2022",
+        schoolInfoLink : "https://schools.org.in/patna/10281100205/sahid-ramanand-singh-ram-gobind-h-s-punpun.html",
+        icon: logo,
         points: [
-            ""
+            "Excelled in key subjects like Mathematics, Physics, Chemistry, Hindi, and English.",
+            "Achieved 78% marks, building a strong academic foundation for future learning.",
+            "Developed a strong interest in technology and problem-solving."
         ],
     },
     {
-        title: "10th(BSEB)",
-        company_name: "Utkramit Madhyamik Vidyalaya, Lanka Kachuara",
+        title: "High School (10th) | BSEB",
+        company_name: "UTKRAMIT MADHYAMIK VIDYALAYA LANKA KACHHUARA | 2019-2020",
         iconBg: "#b7e4c7",
-        date: "March 2019 - March 2020",
+        schoolInfoLink : "https://schools.org.in/patna/10281001102/utkramit-madhyamik-vidyalaya-lanka-kachhuara.html",
+        icon: bseb,
         points: [
-            
+            "Excelled in key subjects like Mathematics, Science, Hindi, English, and Sanskrit.",
+            "Achieved 77% marks, building a strong academic foundation for future learning."
         ],
     },
 ];
