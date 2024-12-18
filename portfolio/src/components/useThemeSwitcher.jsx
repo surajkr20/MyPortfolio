@@ -36,13 +36,16 @@ const useThemeSwitcher = () => {
   },[])
 
   useEffect(() => {
-    if (mode === "dark") {
-      window.localStorage.setItem("theme", "dark");
-      document.documentElement.classList.add("dark");
-    } else {
+    if(mode === "light") {
       window.localStorage.setItem("theme", "light");
       document.documentElement.classList.remove("dark");
     }
+
+    if (mode === "dark") {
+      window.localStorage.setItem("theme", "dark");
+      document.documentElement.classList.add("dark");
+    } 
+    
   }, [mode]);
 
   return [mode, setMode];

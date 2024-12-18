@@ -18,7 +18,7 @@ const Home = () => {
           id="img"
           src={man}
           alt="suraj kr"
-          className="sm:w-[300px] w-[250px] rounded-lg border-r-8 border-b-4 border-b-black border-r-black shadow-lg p-3
+          className="sm:w-[300px] w-[250px] rounded-lg border-[1px] border-r-8 border-b-4 border-b-black border-r-black shadow-lg p-3
           dark:border-light"
         />
         
