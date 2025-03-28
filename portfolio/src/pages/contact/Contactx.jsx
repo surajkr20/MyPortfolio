@@ -1,23 +1,20 @@
 // import React from 'react'
 import './Contact.css'
 import contact from '../../assets/contact.png'
-// import {useGSAP} from '@gsap/react'
-// import gsap from 'gsap'
-// import {ScrollTrigger} from 'gsap/all'
-// gsap.registerPlugin(ScrollTrigger)
 
 const Contact = () => {
   return (
-    <div id="contact">
-      <div className="left-contact">
-        <img src={contact} alt="" />
+    <div id="contact" className='w-full h-screen flex items-center justify-between gap-10 px-10 dark:bg-dark'>
+      <div className="left-contact w-1/2">
+        <img src={contact} className='' />
       </div>
-      <div className="right-contact">
-        <form action="https://formspree.io/f/xjkvevbj" method='POST'>
-          <input type="text" placeholder='Name' name='username'/>
-          <input type="email" name='email' placeholder='email' />
-          <textarea name="message" id="text-area" placeholder='write your message'></textarea>
-          <input type="submit" id='btn' value='submit'/>
+      <div className="right-contact w-1/2">
+        <form action="https://formspree.io/f/xjkvevbj" method='POST' 
+        className='w-full flex flex-col items-center gap-5 p-6'>
+          <input type="text" placeholder='Name' name='username' className='w-full p-2 rounded-lg shadow-xl border-b-2 border-dark border-r-2'/>
+          <input type="email" name='email' placeholder='email'  className='w-full p-2 rounded-lg border-b-2 border-dark border-r-2'/>
+          <textarea name="message" id="text-area" placeholder='write your message'className='w-full p-6 rounded-lg border-b-2 border-dark border-r-2'> </textarea>
+          <input type="submit" id='btn' value='submit' className='w-[150px] bg-primary p-2 font-serif rounded-md text-light text-xl'/>
         </form>
       </div>
     </div>

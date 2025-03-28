@@ -8,6 +8,7 @@ import Contact from './pages/contact/Contactx'
 import { Route, Routes } from "react-router-dom";
 import About from "./pages/About";
 import Footer from "./components/Footer";
+import Projects from "./pages/Projects";
 
 const App = () => {
   return (
@@ -17,6 +18,7 @@ const App = () => {
         <Route path="/" element={<Home/>}/>
         <Route path="/about" element={<About/>}/>
         <Route path="/contact" element={<Contact/>}/>
+        <Route path="/project" element={<Projects/>}/>
       </Routes>
       <Footer/>
     </div>

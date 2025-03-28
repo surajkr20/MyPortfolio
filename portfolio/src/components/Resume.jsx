@@ -6,7 +6,7 @@ const Resume = ({className=''}) => {
   return (
     <div className={`flex flex-row items-center gap-6 ${className}`}>
       {/* Resume section */}
-      <a href={'/'} target={"_blank"} 
+      <a href={'https://drive.google.com/file/d/1kwy3x2LxtTi88WpaX1XxbYpULqXVdrBi/view'} target={"_blank"} 
       className="bg-white text-black p-2 rounded-md w-[130px] text-center hover:bg-black border-2 border-black
       dark:border-2 dark:border-light hover:bg-dark hover:text-light dark:text-light dark:hover:bg-light dark:hover:text-dark">
         Resume

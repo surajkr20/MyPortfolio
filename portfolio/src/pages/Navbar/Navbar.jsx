@@ -1,92 +1,76 @@
-import { useRef } from "react";
-import Logo from "../../components/Logo/Logo";
-import "./Navbar.css";
+import { useState, useRef } from "react";
 import { Link, Outlet } from "react-router-dom";
+import { Sun, Moon, Menu, X } from "lucide-react";
+import Logo from "../../components/Logo/Logo";
 import useThemeSwitcher from "../../components/useThemeSwitcher";
+import "./Navbar.css";
 
 const Navbar = () => {
   const [mode, setMode] = useThemeSwitcher();
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
 
-  const menu = useRef();
-  const mobile = useRef();
-
-  // Function to toggle the mobile menu
+  // Toggle mobile menu state
   const toggleMenu = () => {
-    mobile.current.classList.toggle("activemobile");
-    mobile.current.classList.toggle("activeham");
+    setIsMenuOpen((prev) => !prev);
   };
 
-  // Function to close the mobile menu
+  // Close mobile menu when a link is clicked
   const closeMenu = () => {
-    mobile.current.classList.remove("activemobile");
-    mobile.current.classList.remove("activeham");
+    setIsMenuOpen(false);
   };
 
   return (
     <>
       <nav className="nav-container dark:bg-dark dark:text-light bg-light text-dark shadow-md dark:border-b-2 dark:border-b-light
       flex flex-row items-center justify-between w-full mx-auto sm:px-20 px-6 py-2 z-10">
-        {/* darkMode toggle button */}
+        
+        {/* Dark Mode Toggle Button */}
         <button
           onClick={() => setMode(mode === "light" ? "dark" : "light")}
           className="sm:rounded-lg dark:bg-light bg-dark text-light font-serif font-semibold dark:text-dark sm:p-2 sm:w-[100px] w-[45px] h-[45px] 
-          rounded-full sm:text-[12px] text-[9px] flex items-center justify-center p-3"
+          rounded-full sm:text-[12px] text-[9px] flex items-center justify-center p-3 transition duration-300"
+          aria-label="Toggle Dark Mode"
         >
-          {mode === "dark" ? "Light Mode" : "Dark Mode"}
+          {mode === "dark" ? <Sun size={20} /> : <Moon size={20} />}
         </button>
 
-        {/* Logo Icon */}
+        {/* Logo */}
         <Logo />
 
         {/* Desktop Menu */}
-        <ul className="desktop-menu nav-list flex flex-row items-center gap-6 list-none cursor-pointer ">
-          <Link to="/">
-            <li id="list" className="dark:hover:border-b-2 dark:hover:text-primary dark:border-light hover:border-b-4 border-dark">
-              Home
+        <ul className="desktop-menu nav-list flex flex-row items-center gap-6 list-none cursor-pointer">
+          {[
+            { path: "/", label: "Home" },
+            { path: "/about", label: "About" },
+            { path: "/project", label: "Projects" },
+            { path: "/contact", label: "Contact" }
+          ].map(({ path, label }) => (
+            <li key={path} className="dark:hover:border-b-2 dark:hover:text-primary dark:border-light hover:border-b-4 border-dark">
+              <Link to={path}>{label}</Link>
             </li>
-          </Link>
-          <Link to="/about">
-            <li id="list" className="dark:hover:border-b-2 dark:hover:text-primary dark:border-light hover:border-b-4 border-dark">
-              About
-            </li>
-          </Link>
-          <Link to="/project">
-            <li id="list"
-            className="dark:hover:border-b-2 dark:hover:text-primary dark:border-light hover:border-b-4 border-dark"
-            >Projects</li>
-          </Link>
-          <Link to="contact">
-            <li id="list"
-            className="dark:hover:border-b-2 dark:hover:text-primary dark:border-light hover:border-b-4 border-dark"
-            >Contact</li>
-          </Link>
+          ))}
         </ul>
 
-        {/* Hamburger Menu */}
-        <div className="hamburger" ref={menu} onClick={toggleMenu}>
-          <div className="ham dark:bg-light"></div>
-          <div className="ham dark:bg-light"></div>
-          <div className="ham dark:bg-light"></div>
-        </div>
+        {/* Mobile Menu Toggle Button */}
+        <button className="hamburger" onClick={toggleMenu} aria-label="Toggle Mobile Menu">
+          {isMenuOpen ? <X size={28} /> : <Menu size={28} />}
+        </button>
 
         {/* Mobile Menu */}
-        <ul
-          ref={mobile}
-          className="mobile-menu flex flex-col items-center justify-center gap-5 list-none cursor-pointer text-white"
-        >
-          <Link to="/" onClick={closeMenu}>
-            <li id="list" >Home</li>
-          </Link>
-          <Link to="/about" onClick={closeMenu}>
-            <li id="list">About</li>
-          </Link>
-          <Link to="/project" onClick={closeMenu}>
-            <li id="list">Projects</li>
-          </Link>
-          <Link to="/contact" onClick={closeMenu}>
-            <li id="list">Contact</li>
-          </Link>
-        </ul>
+        {isMenuOpen && (
+          <ul className="mobile-menu flex flex-col items-center justify-center gap-8 list-none cursor-pointer text-white bg-light text-dark font-serif font-semibold dark:bg-dark dark:text-light absolute top-16 left-0 w-full h-auto py-5 shadow-md transition-all duration-300">
+            {[
+              { path: "/", label: "Home" },
+              { path: "/about", label: "About" },
+              { path: "/project", label: "Projects" },
+              { path: "/contact", label: "Contact" }
+            ].map(({ path, label }) => (
+              <li key={path} className="hover:border-b-4 border-b-dark" onClick={closeMenu}>
+                <Link to={path}>{label}</Link>
+              </li>
+            ))}
+          </ul>
+        )}
 
         <Outlet />
       </nav>
