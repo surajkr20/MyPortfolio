@@ -25,7 +25,7 @@ const Home = () => {
         <div className="flex flex-col items-center justify-center gap-4">
           <h1 className="sm:text-[12px] text-[12px] font-semibold flex flex-col items-center justify-center">
             <span className="span1 dark:text-primary">Hello, i&apos;m</span>
-            <span className="span2 sm:text-xl text-primary dark:text-light">Suraj Kumar</span>
+            <span className="span2 sm:text-xl text-primary dark:text-light">𝓼𝓾𝓻𝓪𝓳 𝓴𝓾𝓶𝓪𝓻</span>
           </h1>
           <Icons />
           <TypingEffect

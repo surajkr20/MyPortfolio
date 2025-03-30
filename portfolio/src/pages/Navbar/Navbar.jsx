@@ -1,9 +1,10 @@
-import { useState, useRef } from "react";
+import { useState } from "react";
 import { Link, Outlet } from "react-router-dom";
 import { Sun, Moon, Menu, X } from "lucide-react";
 import Logo from "../../components/Logo/Logo";
 import useThemeSwitcher from "../../components/useThemeSwitcher";
 import "./Navbar.css";
+// import Projects from "../Project/Projects";
 
 const Navbar = () => {
   const [mode, setMode] = useThemeSwitcher();
@@ -42,7 +43,7 @@ const Navbar = () => {
           {[
             { path: "/", label: "Home" },
             { path: "/about", label: "About" },
-            { path: "/project", label: "Projects" },
+            { path: "/projects", label: "Projects" },
             { path: "/contact", label: "Contact" }
           ].map(({ path, label }) => (
             <li key={path} className="dark:hover:border-b-2 dark:hover:text-primary dark:border-light hover:border-b-4 border-dark">
@@ -62,7 +63,7 @@ const Navbar = () => {
             {[
               { path: "/", label: "Home" },
               { path: "/about", label: "About" },
-              { path: "/project", label: "Projects" },
+              { path: "/projects", label: "Projects" },
               { path: "/contact", label: "Contact" }
             ].map(({ path, label }) => (
               <li key={path} className="hover:border-b-4 border-b-dark" onClick={closeMenu}>

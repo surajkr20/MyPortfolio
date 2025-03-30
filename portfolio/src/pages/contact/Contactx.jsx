@@ -1,11 +1,11 @@
 // import React from 'react'
 import './Contact.css'
-import contact from '../../assets/contact.png'
+import contact from '../../assets/contactus.webp'
 
 const Contact = () => {
   return (
     <div id="contact" className='w-full h-screen flex items-center justify-between gap-10 px-10 dark:bg-dark'>
-      <div className="left-contact w-1/2">
+      <div className="left-contact w-[45%] object-cover">
         <img src={contact} className='' />
       </div>
       <div className="right-contact w-1/2">

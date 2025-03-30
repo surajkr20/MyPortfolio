@@ -3,24 +3,26 @@ import React from "react";
 import "./App.css";
 import Navbar from "./pages/Navbar/Navbar";
 import Home from "./pages/Home/Home";
-import Contact from './pages/contact/Contactx'
+import Contact from "./pages/contact/Contactx";
 
-import { Route, Routes } from "react-router-dom";
+import { Route, Routes, BrowserRouter } from "react-router-dom";
 import About from "./pages/About";
 import Footer from "./components/Footer";
-import Projects from "./pages/Projects";
+import Projects from "./pages/Project/Projectx";
 
 const App = () => {
   return (
     <div>
-      <Navbar />
-      <Routes>
-        <Route path="/" element={<Home/>}/>
-        <Route path="/about" element={<About/>}/>
-        <Route path="/contact" element={<Contact/>}/>
-        <Route path="/project" element={<Projects/>}/>
-      </Routes>
-      <Footer/>
+      <BrowserRouter>
+        <Navbar />
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/contact" element={<Contact />} />
+          <Route path="/projects" element={<Projects />} />
+        </Routes>
+        <Footer />
+      </BrowserRouter>
     </div>
   );
 };
