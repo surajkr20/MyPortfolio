@@ -28,7 +28,7 @@ const Navbar = () => {
         {/* Dark Mode Toggle Button */}
         <button
           onClick={() => setMode(mode === "light" ? "dark" : "light")}
-          className="sm:rounded-lg dark:bg-light bg-dark text-light font-serif font-semibold dark:text-dark sm:p-2 sm:w-[100px] w-[45px] h-[45px] 
+          className="sm:rounded-lg dark:bg-light bg-dark text-light font-serif font-semibold dark:text-dark sm:p-2 sm:w-[70px] w-[45px] h-[45px] 
           rounded-full sm:text-[12px] text-[9px] flex items-center justify-center p-3 transition duration-300"
           aria-label="Toggle Dark Mode"
         >
@@ -46,7 +46,7 @@ const Navbar = () => {
             { path: "/projects", label: "Projects" },
             { path: "/contact", label: "Contact" }
           ].map(({ path, label }) => (
-            <li key={path} className="dark:hover:border-b-2 dark:hover:text-primary dark:border-light hover:border-b-4 border-dark">
+            <li key={path} className="dark:hover:border-b-2 dark:hover:text-primary dark:border-light hover:border-b-4 border-dark hover:scale-105 transition-all">
               <Link to={path}>{label}</Link>
             </li>
           ))}
@@ -66,7 +66,7 @@ const Navbar = () => {
               { path: "/projects", label: "Projects" },
               { path: "/contact", label: "Contact" }
             ].map(({ path, label }) => (
-              <li key={path} className="hover:border-b-4 border-b-dark" onClick={closeMenu}>
+              <li key={path} className="hover:border-b-4 border-b-dark hover:scale-105 transition-all mr-14" onClick={closeMenu}>
                 <Link to={path}>{label}</Link>
               </li>
             ))}
