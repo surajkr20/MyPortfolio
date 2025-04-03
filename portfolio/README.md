@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # My Portfolio
 
 ## 🚀 About the Project
@@ -52,3 +53,6 @@ Contributions, issues, and feature requests are welcome! Feel free to fork the r
 - **LinkedIn:** [yourprofile](https://www.linkedin.com/in/suraj-kumar-5b48b9254/)
 
 
+=======
+
+>>>>>>> eda35bd00b75c5aa2996e1bd367aff4c54cae9e7
