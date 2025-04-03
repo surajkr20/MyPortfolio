@@ -17,7 +17,7 @@ const projects = [
     title: "My Portfolio",
     description: "A personal portfolio showcasing my projects and skills.",
     sourceCode: "https://github.com/surajkr20/suraj-portfolio",
-    demoLink: "https://yourportfolio.com",
+    demoLink: "https://surajkr20.github.io/suraj-portfolio",
   }
 ];
 
