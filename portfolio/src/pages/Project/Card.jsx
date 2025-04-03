@@ -1,39 +1,44 @@
 /* eslint-disable no-unused-vars */
 import React from "react";
-import meetify from "../Project/images/meetify.png";
 import { Link } from "react-router-dom";
 import { FaGithub, FaExternalLinkAlt } from "react-icons/fa";
 
-const ProjectCard = () => {
+// eslint-disable-next-line react/prop-types
+const ProjectCard = ({ img, title, description, sourceCode, demoLink }) => {
   return (
-    <div className="w-[47%] bg-white shadow-lg rounded-2xl overflow-hidden transition-transform duration-300 hover:scale-105">
+    <div className="sm:w-[90%] w-full h-full bg-white shadow-lg rounded-2xl overflow-hidden transition-transform duration-300 hover:scale-105">
       {/* Image Section */}
       <div className="relative">
         <img
-          src={meetify}
-          title="Meetify - Video Conferencing App"
-          alt="Meetify Project Screenshot"
-          className="w-full h-48 object-cover"
+          src={img}
+          alt={`${title} Screenshot`}
+          className="w-full h-48 object-fill"
         />
       </div>
 
       {/* Project Details */}
       <div className="p-4 flex flex-col items-center text-center">
-        <h2 className="text-lg font-bold text-gray-800">Meetify - Video Conferencing App</h2>
-        <p className="text-sm text-gray-600 mt-1 font-mono dark:text-primaryDark">An intuitive and seamless video calling platform with screen sharing and chat integration.</p>
+        <h2 className="text-lg font-bold text-gray-800 dark:text-light">{title}</h2>
+        <p className="text-sm text-gray-600 mt-1 font-mono dark:text-primaryDark">
+          {description}
+        </p>
 
         {/* Action Buttons */}
-        <div className="flex justify-between w-full mt-3">
-          <Link to="https://github.com/surajkr20/Meetify-App" target="_blank">
-            <button className="flex items-center gap-2 dark:bg-light dark:text-dark p-1 rounded-md font-medium font-mono">
-              <FaGithub className="text-lg" /> Source Code
-            </button>
-          </Link>
-          <Link to="https://meetify-app.vercel.app/" target="_blank">
-            <button className="flex items-center gap-2 bg-blue-600 hover:bg-blue-700 dark:bg-light dark:text-dark p-1 rounded-md font-medium font-mono">
-              <FaExternalLinkAlt className="text-lg" /> Live Demo
-            </button>
-          </Link>
+        <div className="flex flex-wrap justify-center gap-3 w-full mt-4">
+          {sourceCode && (
+            <Link to={sourceCode} target="_blank">
+              <button className="flex items-center gap-2 bg-gray-800 text-white dark:bg-light dark:text-dark px-3 py-1 rounded-md font-medium font-mono transition duration-300 hover:bg-gray-700">
+                <FaGithub className="text-lg" /> Source Code
+              </button>
+            </Link>
+          )}
+          {demoLink && (
+            <Link to={demoLink} target="_blank">
+              <button className="flex items-center gap-2 bg-blue-600 hover:bg-blue-700 dark:bg-light dark:text-dark px-3 py-1 rounded-md font-medium font-mono transition duration-300">
+                <FaExternalLinkAlt className="text-lg" /> Live Demo
+              </button>
+            </Link>
+          )}
         </div>
       </div>
     </div>
