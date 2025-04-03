@@ -4,6 +4,20 @@
     display: none;
 }
 
+@media (max-width: 740px){
+    .left-home{
+        display: none;
+    }
+    .right-home{
+        width: 100%;
+        
+    }
+    .left-resume{
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
 @media (max-width: 640px){
     #home{
         width: 100%;
@@ -34,3 +48,4 @@
         /* margin-top: 20px; */
     }
 }
+

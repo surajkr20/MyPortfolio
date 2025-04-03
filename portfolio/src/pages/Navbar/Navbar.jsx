@@ -59,7 +59,7 @@ const Navbar = () => {
 
         {/* Mobile Menu */}
         {isMenuOpen && (
-          <ul className="mobile-menu flex flex-col items-center justify-center gap-8 list-none cursor-pointer text-white bg-light text-dark font-serif font-semibold dark:bg-dark dark:text-light absolute top-16 left-0 w-full h-auto py-5 shadow-md transition-all duration-300">
+          <ul className="mobile-menu flex flex-col items-center justify-center text-center gap-8 list-none cursor-pointer text-white bg-light text-dark font-serif font-semibold dark:bg-dark dark:text-light absolute top-16 left-0 w-full h-auto py-5 shadow-md transition-all duration-300">
             {[
               { path: "/", label: "Home" },
               { path: "/about", label: "About" },

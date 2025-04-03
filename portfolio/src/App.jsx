@@ -4,6 +4,7 @@ import "./App.css";
 import Navbar from "./pages/Navbar/Navbar";
 import Home from "./pages/Home/Home";
 import Contact from "./pages/contact/Contactx";
+import BackGroundPattern from './components/BackGroundPattern.jsx'
 
 import { Route, Routes, BrowserRouter } from "react-router-dom";
 import About from "./pages/About";
