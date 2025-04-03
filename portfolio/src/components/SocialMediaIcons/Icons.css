@@ -36,6 +36,7 @@
 @media (max-width: 700px){
     .social-container{
         width: 100%;
+        margin-top: 9px;
     }
     .social-container #icon-cover i{
         font-size: 1.4rem;

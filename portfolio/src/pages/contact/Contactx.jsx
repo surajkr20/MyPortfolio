@@ -11,9 +11,9 @@ const Contact = () => {
       <div className="right-contact w-1/2">
         <form action="https://formspree.io/f/xjkvevbj" method='POST' 
         className='w-full flex flex-col items-center gap-5 p-6'>
-          <input type="text" placeholder='Name' name='username' className='w-full p-2 rounded-lg shadow-xl border-b-2 border-dark border-r-2'/>
-          <input type="email" name='email' placeholder='email'  className='w-full p-2 rounded-lg border-b-2 border-dark border-r-2'/>
-          <textarea name="message" id="text-area" placeholder='write your message'className='w-full p-6 rounded-lg border-b-2 border-dark border-r-2'> </textarea>
+          <input type="text" placeholder='Name' name='username' className='w-full p-2 rounded-lg shadow-xl border-2 border-dark border-r-2'/>
+          <input type="email" name='email' placeholder='email'  className='w-full p-2 rounded-lg border-2 border-dark border-r-2'/>
+          <textarea name="message" id="text-area" placeholder='write your message'className='w-full p-6 rounded-lg border-2 border-dark'> </textarea>
           <input type="submit" id='btn' value='submit' className='w-[150px] bg-primary p-2 font-serif rounded-md text-light text-xl'/>
         </form>
       </div>

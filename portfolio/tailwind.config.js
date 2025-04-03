@@ -15,9 +15,6 @@ export default {
       gray: "#333333",
     }
   },
-  backgroundImage:{
-    circularLight: 'repeating-radial-gradient(rgba(0,0,0,0.4) 2px, #f5f5f5 5px, #f5f5f5 100px);'
-  },
   screens: {
     // 2xl: {max : 1535px},
     xl : { max : "1279px"},

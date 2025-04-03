@@ -41,7 +41,7 @@ const Navbar = () => {
         {/* Desktop Menu */}
         <ul className="desktop-menu nav-list flex flex-row items-center gap-6 list-none cursor-pointer">
           {[
-            { path: "/", label: "Home" },
+            { path: "/suraj-portfolio", label: "Home" },
             { path: "/about", label: "About" },
             { path: "/projects", label: "Projects" },
             { path: "/contact", label: "Contact" }
@@ -61,7 +61,7 @@ const Navbar = () => {
         {isMenuOpen && (
           <ul className="mobile-menu flex flex-col items-center justify-center text-center gap-8 list-none cursor-pointer text-white bg-light text-dark font-serif font-semibold dark:bg-dark dark:text-light absolute top-16 left-0 w-full h-auto py-5 shadow-md transition-all duration-300">
             {[
-              { path: "/", label: "Home" },
+              { path: "/suraj-portfolio", label: "Home" },
               { path: "/about", label: "About" },
               { path: "/projects", label: "Projects" },
               { path: "/contact", label: "Contact" }
