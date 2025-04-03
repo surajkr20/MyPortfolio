@@ -1,30 +1,54 @@
-# React + Vite
+# My Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## 🚀 About the Project
+This is my personal portfolio website showcasing my projects, skills, and experiences. It serves as an interactive resume and a platform to demonstrate my work as a developer.
 
-Currently, two official plugins are available:
+## 🌟 Features
+- Responsive Design
+- Dynamic Project Showcase
+- Contact Form
+- Dark Mode Support
+- Smooth Animations
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🛠️ Built With
+- **React.js** - Frontend Framework
+- **Tailwind CSS** - Styling
+- **React Router** - Navigation
+- **Framer Motion** - Animations
+
+## 📂 Installation
+
+To run this project locally, follow these steps:
+
+1. Clone the repository:
+   ```sh
+   git clone https://github.com/yourusername/portfolio.git
+   ```
+
+2. Navigate to the project directory:
+   ```sh
+   cd portfolio
+   ```
+
+3. Install dependencies:
+   ```sh
+   npm install
+   ```
+
+4. Start the development server:
+   ```sh
+   npm start
+   ```
+
+## 🔗 Live Demo
+Check out the live version of my portfolio: [Portfolio Website](https://surajkr20.github.io/suraj-portfolio)
+
+## 🤝 Contributing
+Contributions, issues, and feature requests are welcome! Feel free to fork the repository and submit pull requests.
+
+## 📬 Contact
+- **Email:** your.suraj71308kumar@gmail.com
+- **GitHub:** [yourusername](https://github.com/surajkr20/)
+- **LinkedIn:** [yourprofile](https://www.linkedin.com/in/suraj-kumar-5b48b9254/)
 
 
-leetcode link - https://leetcode.com/u/Suraj_kr78/
-github link - https://github.com/surajkr20
-linkdin - https://www.linkedin.com/in/suraj-kumar-5b48b9254/
-twitter - https://x.com/Abhinav_Suraj02
-
-
-#about page - details
-
-Skills & Expertise:-
-I’m a passionate web developer and a final-year BCA student from Patliputra University, specializing in designing and developing intuitive, user-friendly, and scalable web applications. With expertise in modern technologies like HTML, CSS, JavaScript, TypeScript, React.js, Next.js, Node.js, Express.js, MongoDB, and Firebase, I strive to build impactful solutions. My proficiency in JWT authentication and other advanced web development practices enables me to deliver secure and efficient digital experiences.
-
- 
-Current Learning Goals:-
-Alongside my expertise in web development, I am currently enhancing my problem-solving skills by learning Data Structures and Algorithms (DSA) in C++. This journey is helping me strengthen my logical thinking and optimize solutions, ensuring I can tackle complex computational challenges effectively. At the same time, I am actively developing full-stack projects to apply my technical skills and create scalable, efficient applications that solve real-world problems.
-
-
-Values & Vision
-I believe in continuous learning and innovation to build impactful solutions that improve lives. Driven by curiosity, persistence, and collaboration, I strive to grow as a skilled developer.
-
-My vision is to master modern web technologies and Data Structures and Algorithms, aiming to secure a frontend developer role at Google by the end of 2025.
