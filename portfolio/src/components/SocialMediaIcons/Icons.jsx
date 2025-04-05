@@ -7,7 +7,7 @@ const Icons = () => {
   return (
     <>
       {/* linkedIn icon */}
-      <div className="social-container ">
+      <div className="social-container">
         {/* LinkedIn Icon */}
         <a
           id="icon-cover"
@@ -26,7 +26,7 @@ const Icons = () => {
           target="_blank"
           className="text-white transition-colors dark:bg-light bg-dark p-2 rounded-full flex items-center justify-center"
         >
-          <img src={leetcode} alt="leetcode" />
+          <img src={leetcode} alt="leetcode"/>
         </a>
 
         {/* GitHub Icon */}

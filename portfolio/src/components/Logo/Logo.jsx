@@ -23,7 +23,7 @@ const Logo = () => {
   })
 
   return (
-    <div className="dark:border-light border-2 rounded-full dark:text-light text-dark sm:ml-[10%]" id="link">
+    <div className="logo-design dark:border-light border-2 rounded-full dark:text-light text-dark sm:ml-[10%]" id="link">
       <motion.div
         className="logo w-10 h-10 flex items-center text-2xl justify-center rounded-full font-bold cursor-pointer"
         whileHover={{

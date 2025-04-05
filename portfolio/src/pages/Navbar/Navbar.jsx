@@ -26,7 +26,7 @@ const Navbar = () => {
       flex flex-row items-center justify-between w-full mx-auto sm:px-20 px-6 py-2 z-10">
         
         {/* Dark Mode Toggle Button */}
-        <button
+        <button id="Toggle-Dark-Btn"
           onClick={() => setMode(mode === "light" ? "dark" : "light")}
           className="sm:rounded-lg dark:bg-light bg-dark text-light font-serif font-semibold dark:text-dark sm:p-2 sm:w-[70px] w-[45px] h-[45px] 
           rounded-full sm:text-[12px] text-[9px] flex items-center justify-center p-3 transition duration-300"

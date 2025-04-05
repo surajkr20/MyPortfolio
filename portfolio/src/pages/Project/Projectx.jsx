@@ -23,8 +23,8 @@ const projects = [
 
 const Projects = () => {
   return (
-    <div className="min-h-screen bg-gray-100 dark:bg-dark dark:text-light px-6 sm:px-20 py-16 sm:py-24">
-      <h2 className="text-center text-2xl sm:text-4xl font-bold text-gray-800 dark:text-light mb-10">
+    <div className="min-h-screen bg-gray-100 dark:bg-dark dark:text-light px-6 sm:px-20 py-16 sm:py-24 sm:m-0 mt-4 sm:mb-0">
+      <h2 className="text-center text-2xl sm:text-4xl font-bold text-gray-800 dark:text-light mb-4">
         My Projects
       </h2>
       <div className="grid grid-cols-1 sm:grid-cols-2 gap-10 justify-center">

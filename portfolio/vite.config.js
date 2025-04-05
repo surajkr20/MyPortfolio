@@ -5,4 +5,8 @@ import react from '@vitejs/plugin-react'
 export default defineConfig({
   plugins: [react()],
   base:'/suraj-portfolio',
+  server: {
+    host: '0.0.0.0', // 👈 binds to all local network interfaces
+    port: 5173,       // optional, set a fixed port
+  },
 })

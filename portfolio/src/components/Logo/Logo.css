@@ -9,3 +9,9 @@
     background: linear-gradient(rgb(221, 161, 10),rgb(227, 249, 227), rgb(98, 10, 10));
     background-clip: text;
 }
+
+@media (max-width: 750px) {
+    .logo-design{
+        margin-right: 20px;
+    }
+}
