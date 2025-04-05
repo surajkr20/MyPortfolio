@@ -16,8 +16,8 @@ const projects = [
     img: portfolio,
     title: "My Portfolio",
     description: "A personal portfolio showcasing my projects and skills.",
-    sourceCode: "https://github.com/surajkr20/suraj-portfolio",
-    demoLink: "https://surajkr20.github.io/suraj-portfolio/",
+    sourceCode: "https://github.com/surajkr20/MyPortfolio/tree/main/portfolio",
+    demoLink: "https://surajkr20-porfolio.vercel.app/",
   }
 ];
 
