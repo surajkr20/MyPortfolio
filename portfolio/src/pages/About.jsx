@@ -10,23 +10,33 @@ import "react-vertical-timeline-component/style.min.css";
 
 const About = () => {
   return (
-    <div className=" flex flex-col flex-wrap items-center mx-auto px-8 sm:px-20 sm:py-24 py-20 gap-6 dark:bg-dark dark:text-light border-t-2">
+    <div className=" flex flex-col flex-wrap items-center mx-auto px-8 sm:px-20 sm:py-20 py-20 gap-6 dark:bg-dark dark:text-light border-t-2">
       {/* introduction section */}
-      <div className="flex flex-col justify-between gap-3 shadow-lg dark:border-light dark:border-b-2 p-4 w-full">
-          <h2 className="text-red-600 text-xl text-center">
-            <span className="font-serif font-semibold">Hello,</span>
-            i&apos;m Suraj!
-          </h2>
-        <p className="sm:text-[17px] dark:text-light font-thin font-serif shadow-lg p-3 rounded-xl text-center border-b-8 border-r-8 border-dark border-2
-          dark:boder-2 dark:border-light hover:scale-95 transition-all">
-          I’m a full-stack web developer and a problem solver with aspirations
-          to contribute to projects involving the MERN stack and Java by
-          collaborating with reputed companies in the future. Currently, I am
-          enhancing my DSA skills using Java.I excel in academics and actively
-          participate in various events to gain experience and showcase my
-          skills. Apart from that, I’m a quick learner, a hardworking student,
-          and proficient in English and Hindi.
-        </p>
+      <div className="flex flex-col items-center gap-4 p-2">
+        <h2 className="text-red-600 text-xl text-center">
+          <span className="font-serif font-semibold">Hello,</span>
+          i&apos;m Suraj! - About Me
+        </h2>
+        <span
+          className="sm:text-[17px] dark:text-light font-thin font-serif shadow-lg p-3 rounded-xl text-center border-b-8 border-r-8 border-primaryDark border-2
+          dark:boder-2 dark:border-light hover:scale-95 transition-all"
+        >
+          I’m a full-stack web developer and passionate problem solver, with a
+          strong interest in building real-world applications using the MERN
+          stack and Java.Currently, I’m sharpening my Data Structures and
+          Algorithms (DSA) skills in Java while aiming to contribute to
+          innovative projects at reputed tech companies.
+        </span>
+        <span
+          className="sm:text-[17px] dark:text-light font-thin font-serif shadow-lg p-3 rounded-xl text-center border-b-8 border-r-8 border-primaryDark border-2
+          dark:boder-2 dark:border-light hover:scale-95 transition-all"
+        >
+          I maintain strong academic performance and actively engage in tech
+          events to expand my experience and showcase my skills. As a quick
+          learner and hardworking individual, I thrive in both team and solo
+          environments. I&apos;m fluent in English and Hindi, and always eager
+          to learn and grow.
+        </span>
       </div>
 
       {/* skills section */}
