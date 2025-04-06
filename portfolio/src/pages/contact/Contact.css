@@ -1,8 +1,5 @@
 
 @media (max-width: 750px){
-    .left-contact{
-        display: none;
-    }
     .right-contact{
         width: 100%;
     }

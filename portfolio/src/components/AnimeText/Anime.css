@@ -1,11 +1,13 @@
 
-
+.anime-text h1{
+    font-size: 2.6vw;
+    font-stretch: condensed;
+}
 
 @media (max-width:750px){
     .anime-text h1{
         font-size: 2rem;
-        text-align: left;
-        line-height: 2.5rem;
-        font-stretch: condensed;
+        text-align: center;
+
     }
 }

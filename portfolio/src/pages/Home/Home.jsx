@@ -31,7 +31,7 @@ const Home = () => {
             id="img"
             src={images[currentIndex]}
             alt="suraj kr"
-            className="sm:w-[280px] w-[250px] sm:h-[300px] h-[250px] rounded-lg border-[1px] border-r-8 border-b-4 border-b-black border-r-black shadow-lg p-3 dark:border-light object-fill hover:scale-105 transition-all"
+            className="sm:w-[280px] w-[250px] sm:h-[300px] h-[250px] rounded-lg border-[1px] border-r-8 border-b-8 shadow-lg p-3 border-primaryDark dark:border-light object-fill hover:scale-105 transition-all"
           />
           {/* Left Button */}
           <button
@@ -57,7 +57,7 @@ const Home = () => {
         </div>
 
         <div className="flex flex-col items-center justify-center gap-4">
-          <Icons />
+          <Icons/>
           <TypingEffect
             className="text-2xl font-semibold font-serif dark:text-light"
             text={["FullStack Dev", "Software Engineer", "Programmer"]}
@@ -78,6 +78,7 @@ const Home = () => {
             maintainable code. Seeking opportunities to contribute and grow in a
             challenging tech-driven environment.
           </p>
+          
           <Resume className="left-resume hidden mb-6" />
         </div>
       </div>
@@ -85,11 +86,12 @@ const Home = () => {
       {/* right section */}
       <div className="right-home sm:w-1/2 w-full h-screen flex flex-col justify-center gap-6 ">
         <AnimeText
-          Text="Transforming Ideas into Functional Realities through Modern Development, Clean Code, and Logical Problem-Solving"
-          className="!text-left dark:text-light"
+          Text="𝖳𝗋𝖺𝗇𝗌𝖿𝗈𝗋𝗆𝗂𝗇𝗀 𝖨𝖽𝖾𝖺𝗌 𝗂𝗇𝗍𝗈 𝖥𝗎𝗇𝖼𝗍𝗂𝗈𝗇𝖺𝗅 𝖱𝖾𝖺𝗅𝗂𝗍𝗂𝖾𝗌 𝗍𝗁𝗋𝗈𝗎𝗀𝗁 𝖬𝗈𝖽𝖾𝗋𝗇 𝖣𝖾𝗏𝖾𝗅𝗈𝗉𝗆𝖾𝗇𝗍, 𝖢𝗅𝖾𝖺𝗇 𝖢𝗈𝖽𝖾, 𝖺𝗇𝖽 𝖫𝗈𝗀𝗂𝖼𝖺𝗅 𝖯𝗋𝗈𝖻𝗅𝖾𝗆-𝖲𝗈𝗅𝗏𝗂𝗇𝗀"
+          className="text-left shadow-lg p-2 rounded-xl dark:text-light transition-all font-semibold"
         />
 
-        <p className="sm:text-[15px] dark:text-light font-thin font-mono">
+        <p className="sm:text-[15px] dark:text-light font-thin font-mono shadow-lg p-3 rounded-xl text-center border-b-8 border-r-8 border-dark border-2
+          dark:boder-2 dark:border-light hover:scale-95 transition-all">
           ⮚ MERN Stack developer skilled in building scalable web applications
           using React.js, Node.js, Express.js, and MongoDB. Strong
           problem-solving skills. Passionate about optimizing backend
@@ -98,7 +100,10 @@ const Home = () => {
           challenging tech-driven environment.
         </p>
 
-        <Resume />
+        <div className="flex items-center justify-between">
+          <Resume/>
+          <div className="tab-icons hidden"><Icons/></div>
+        </div>
       </div>
     </div>
   );

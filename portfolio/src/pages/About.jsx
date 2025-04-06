@@ -10,20 +10,15 @@ import "react-vertical-timeline-component/style.min.css";
 
 const About = () => {
   return (
-    <div className=" flex flex-col flex-wrap items-center mx-auto px-8 sm:px-20 sm:py-24 py-20 gap-6 dark:bg-dark dark:text-light">
+    <div className=" flex flex-col flex-wrap items-center mx-auto px-8 sm:px-20 sm:py-24 py-20 gap-6 dark:bg-dark dark:text-light border-t-2">
       {/* introduction section */}
       <div className="flex flex-col justify-between gap-3 shadow-lg dark:border-light dark:border-b-2 p-4 w-full">
-        <div className="flex gap-2 sm:justify-between justify-center items-center">
-          <h2 className="text-red-600 text-xl">
+          <h2 className="text-red-600 text-xl text-center">
             <span className="font-serif font-semibold">Hello,</span>
-            i&apos;m Suraj!🙂
+            i&apos;m Suraj!
           </h2>
-          <h2 className="text-red-600 text-xl sm:block hidden">
-            <span className="font-serif font-semibold">Thanks</span> for
-            visiting my portfolio!🙂
-          </h2>
-        </div>
-        <p className="font-serif hover:scale-105 transition-all">
+        <p className="sm:text-[17px] dark:text-light font-thin font-serif shadow-lg p-3 rounded-xl text-center border-b-8 border-r-8 border-dark border-2
+          dark:boder-2 dark:border-light hover:scale-95 transition-all">
           I’m a full-stack web developer and a problem solver with aspirations
           to contribute to projects involving the MERN stack and Java by
           collaborating with reputed companies in the future. Currently, I am
@@ -39,9 +34,9 @@ const About = () => {
         <h1 className="sm:text-2xl text-3xl font-serif font-semibold text-blue-600 dark:text-primary text-center ">
           My Skills
         </h1>
-        <div className="flex flex-wrap gap-6 justify-between hover:scale-105 transition-all">
+        <div className="flex flex-wrap gap-6 justify-between transition-all">
           {skills.map((skill) => (
-            <div className="w-14 h-14 flex items-center justify-center box shadow-lg border-r-4 border-b-4 dark:border-light rounded-md">
+            <div className="w-14 h-14 hover:scale-105 flex items-center justify-center box shadow-lg border-r-4 border-b-4 dark:border-light rounded-md">
               <img
                 src={skill.imageUrl}
                 alt={skill.name}

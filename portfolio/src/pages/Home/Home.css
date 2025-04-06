@@ -9,6 +9,12 @@
     display: flex;
     justify-content: center;
   }
+  .tab-icons{
+    display: block;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
 }
 
 @media (max-width: 640px) {

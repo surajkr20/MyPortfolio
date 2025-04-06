@@ -34,8 +34,8 @@ const singleWord = {
 // eslint-disable-next-line react/prop-types
 const AnimeText = ({Text, className=''}) => {
   return (
-    <div className="anime-text w-full mx-auto py-2 items-center justify-center text-center overflow-hidden">
-        <motion.h1 className={`inline-block w-full text-black font-bold capitalize sm:text-[2.5vw]  ${className}`}
+    <div className="anime-text w-full items-center justify-center text-center overflow-hidden">
+        <motion.h1 className={`inline-block w-full text-black capitalize  ${className}`}
         variants={quote}
         initial= "initial"
         animate = "animate"
