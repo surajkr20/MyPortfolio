@@ -21,12 +21,12 @@ const Home = () => {
   return (
     <div
       id="home"
-      className="w-full flex sm:flex-row flex-col items-center justify-between px-12 py-24 sm:py-0 mx-auto bg-light dark:bg-dark"
+      className="w-full flex sm:flex-row flex-col items-center justify-between gap-1 px-12 py-24 sm:py-0 mx-auto bg-light dark:bg-dark"
     >
       {/* left section */}
-      <div className="left-home flex items-center justify-center flex-col gap-6 sm:w-1/3 w-full h-screen">
+      <div className="left-home sm:-mt-0 -mt-3 flex items-center justify-center flex-col gap-6 sm:w-1/3 w-full h-screen">
         <AnimeText
-          Text="Hello, i'm Suraj!"
+          Text="𝐻𝑒𝓁𝓁𝑜, 𝒾'𝓂 𝒮𝓊𝓇𝒶𝒿 !"
           className="sm:hidden block text-center rounded-xl dark:text-light transition-all font-semibold sm:text-3xl xl:mb-4"
         />
 
@@ -71,28 +71,14 @@ const Home = () => {
             eraseDelay={1000}
             typingDelay={500}
           />
-
-          <p
-            className="sm:hidden font-serif shadow-lg p-3 rounded-xl text-center border-b-8 border-dark border-2
-          dark:boder-2 dark:border-light dark:text-light hover:scale-105 transition-all"
-          >
-            MERN Stack developer skilled in building scalable web applications
-            using React.js, Node.js, Express.js, and MongoDB. Strong
-            problem-solving skills. Passionate about optimizing backend
-            performance, developing real-time applications, and writing clean,
-            maintainable code. Seeking opportunities to contribute and grow in a
-            challenging tech-driven environment.
-          </p>
-
-          <Resume className="left-resume hidden mb-10" />
         </div>
       </div>
 
       {/* right section */}
-      <div className="right-home sm:w-[60%] w-full h-screen flex flex-col justify-center gap-5 ">
+      <div className="right-home sm:w-[60%] w-full flex flex-col justify-center gap-6">
         <AnimeText
           Text="Hello, i'm Suraj Kumar"
-          className="text-center rounded-xl dark:text-light transition-all font-semibold mb-0 md:mb-4 md:text-left sm:p-2 p-0"
+          className="text-center rounded-xl dark:text-light transition-all font-semibold md:mb-0 md:text-left sm:p-2 p-0 sm:block hidden"
         />
 
         <span
@@ -110,7 +96,7 @@ const Home = () => {
 
         <p
           className="sm:text-[15px] dark:text-light font-thin font-mono shadow-lg p-3 rounded-xl text-center border-b-8 border-r-8 border-dark border-2
-          dark:boder-2 dark:border-light hover:scale-95 transition-all"
+          dark:boder-2 dark:border-light hover:scale-95 transition-all sm:block hidden"
         >
           ⮚ MERN Stack developer skilled in building scalable web applications
           using React.js, Node.js, Express.js, and MongoDB. Strong
@@ -120,7 +106,7 @@ const Home = () => {
           challenging tech-driven environment.
         </p>
 
-        <Resume />
+        <Resume/>
       </div>
     </div>
   );

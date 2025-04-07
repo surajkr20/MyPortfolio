@@ -4,6 +4,7 @@
   }
   .right-home {
     width: 100%;
+    height: 100vh;
   }
   .left-resume {
     display: flex;
@@ -20,10 +21,10 @@
 @media (max-width: 640px) {
   #home {
     width: 100%;
-    height: fit-content;
   }
   .left-home {
     display: block;
+    height: 0%;
     p{
       width: 100%;
     }
@@ -31,7 +32,17 @@
         margin-bottom: 20px;
     }
   }
-  .right-home {
-    display: none;
+  .right-home{
+    width: 100%;
+    height: 0%;
+    .tab-icons{
+      display: none;
+      height: 0%;
+    }
+    span{
+      font-style: oblique;
+      font-size: 13px;
+      font-stretch: condensed;
+    }
   }
 }

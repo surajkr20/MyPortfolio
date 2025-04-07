@@ -14,8 +14,7 @@ const About = () => {
       {/* introduction section */}
       <div className="flex flex-col items-center gap-4 p-2">
         <h2 className="text-red-600 text-xl text-center">
-          <span className="font-serif font-semibold">Hello,</span>
-          i&apos;m Suraj! - About Me
+          <span className="font-serif font-semibold">𝒜𝒷𝑜𝓊𝓉 𝓂𝑒..</span>
         </h2>
         <span
           className="sm:text-[17px] dark:text-light font-thin font-serif shadow-lg p-3 rounded-xl text-center border-b-8 border-r-8 border-primaryDark border-2
