@@ -21,13 +21,13 @@ const Home = () => {
   return (
     <div
       id="home"
-      className="flex sm:flex-row flex-col items-center justify-between px-12 py-24 sm:py-0 mx-auto bg-light dark:bg-dark"
+      className="w-full h-screen flex sm:flex-row flex-col items-center justify-between px-12 py-24 sm:py-0 mx-auto bg-light dark:bg-dark"
     >
       {/* left section */}
       <div className="left-home flex items-center justify-center flex-col gap-6 sm:w-1/3 w-full h-screen">
         <AnimeText
-          Text="Hello, i'm Suraj Kumar"
-          className="sm:hidden block text-center rounded-xl dark:text-light transition-all font-semibold sm:text-3xl mb-0 xl:mb-4 md:text-left"
+          Text="Hello, i'm Suraj!"
+          className="sm:hidden block text-center rounded-xl dark:text-light transition-all font-semibold sm:text-3xl mb-2 xl:mb-4 "
         />
 
         {/* image section */}
@@ -84,7 +84,7 @@ const Home = () => {
             challenging tech-driven environment.
           </p>
 
-          <Resume className="left-resume hidden mb-6" />
+          <Resume className="left-resume hidden mb-10" />
         </div>
       </div>
 
@@ -92,7 +92,7 @@ const Home = () => {
       <div className="right-home sm:w-[60%] w-full h-screen flex flex-col justify-center gap-5 ">
         <AnimeText
           Text="Hello, i'm Suraj Kumar"
-          className="text-center rounded-xl dark:text-light transition-all font-semibold mb-0 xl:mb-4 md:text-left p-2"
+          className="text-center rounded-xl dark:text-light transition-all font-semibold mb-0 md:mb-4 md:text-left sm:p-2 p-0"
         />
 
         <span

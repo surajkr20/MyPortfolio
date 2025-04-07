@@ -20,7 +20,6 @@
 @media (max-width: 640px) {
   #home {
     width: 100%;
-    height: auto;
   }
   .left-home {
     display: block;
