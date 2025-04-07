@@ -4,7 +4,7 @@ import React from "react";
 
 const Resume = ({className=''}) => {
   return (
-    <div className={`flex flex-row sm:items-center md:justify-start md:gap-10 items-center justify-center gap-10  ${className}` }>
+    <div className={`flex flex-row mt-4 sm:items-center md:justify-start gap-10 items-center justify-center ${className}` }>
       {/* Resume section */}
       <a href={'https://drive.google.com/file/d/1kwy3x2LxtTi88WpaX1XxbYpULqXVdrBi/view'} target={"_blank"} 
       className="bg-white text-black p-2 rounded-md w-[130px] text-center hover:bg-black border-2 border-black

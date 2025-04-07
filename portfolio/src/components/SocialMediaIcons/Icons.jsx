@@ -7,7 +7,7 @@ const Icons = () => {
   return (
     <>
       {/* linkedIn icon */}
-      <div className="social-container">
+      <div className="social-container sm:mt-0 mt-2">
         {/* LinkedIn Icon */}
         <a
           id="icon-cover"

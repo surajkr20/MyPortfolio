@@ -21,17 +21,17 @@ const Home = () => {
   return (
     <div
       id="home"
-      className="w-full h-screen flex sm:flex-row flex-col items-center justify-between px-12 py-24 sm:py-0 mx-auto bg-light dark:bg-dark"
+      className="w-full flex sm:flex-row flex-col items-center justify-between px-12 py-24 sm:py-0 mx-auto bg-light dark:bg-dark"
     >
       {/* left section */}
       <div className="left-home flex items-center justify-center flex-col gap-6 sm:w-1/3 w-full h-screen">
         <AnimeText
           Text="Hello, i'm Suraj!"
-          className="sm:hidden block text-center rounded-xl dark:text-light transition-all font-semibold sm:text-3xl mb-2 xl:mb-4 "
+          className="sm:hidden block text-center rounded-xl dark:text-light transition-all font-semibold sm:text-3xl xl:mb-4"
         />
 
         {/* image section */}
-        <div className="relative">
+        <div className="relative flex items-center justify-center">
           <img
             id="img"
             src={images[currentIndex]}
@@ -45,7 +45,7 @@ const Home = () => {
                 (prev) => (prev - 1 + images.length) % images.length
               )
             }
-            className="absolute left-[-30px] top-1/2 transform -translate-y-1/2 p-4 rounded-full shadow-lg dark:bg-light hover:scale-110 transition-all"
+            className="absolute sm:left-[-30px] left-[-25px] top-1/2 transform -translate-y-1/2 p-4 rounded-full shadow-lg dark:bg-light hover:scale-110 transition-all"
           >
             <FaArrowLeft />
           </button>
@@ -55,13 +55,13 @@ const Home = () => {
             onClick={() =>
               setCurrentIndex((prev) => (prev + 1) % images.length)
             }
-            className="absolute dark:bg-light shadow-lg right-[-30px] top-1/2 transform -translate-y-1/2 p-4 rounded-full hover:scale-110 transition-all"
+            className="absolute dark:bg-light shadow-lg right-[-25px] sm:right-[-30px] top-1/2 transform -translate-y-1/2 p-4 rounded-full hover:scale-110 transition-all"
           >
             <FaArrowRight />
           </button>
         </div>
 
-        <div className="flex flex-col items-center justify-center gap-4">
+        <div className="flex flex-col items-center justify-center gap-6">
           <Icons />
           <TypingEffect
             className="text-2xl font-semibold font-serif dark:text-light"
