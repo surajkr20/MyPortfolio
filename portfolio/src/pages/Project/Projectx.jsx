@@ -3,6 +3,7 @@ import React from 'react';
 import ProjectCard from './Card';
 import meetify from "../Project/images/meetify.png";
 import portfolio from "../Project/images/portfolio.png";
+import youtube_clone from "../Project/images/yt.png";
 
 const projects = [
   {
@@ -18,6 +19,13 @@ const projects = [
     description: "A personal portfolio showcasing my projects and skills.",
     sourceCode: "https://github.com/surajkr20/MyPortfolio/tree/main/portfolio",
     demoLink: "https://surajkr20-porfolio.vercel.app/",
+  },
+  {
+    img: youtube_clone,
+    title: "Youtube-Clone",
+    description: "Built a responsive YouTube clone using React.js, Context API, and Tailwind CSS with features like video search, playback, and category-wise browsing.",
+    sourceCode: "https://github.com/surajkr20/YoutubeClone",
+    demoLink: "https://youtube-clone-made-by-suraj.vercel.app/",
   }
 ];
 
