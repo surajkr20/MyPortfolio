@@ -1,10 +1,7 @@
 // import React from 'react'
 import "../Home/Home.css";
 
-import img1 from "../../assets/portfolio pic.jpg";
-import img2 from "./profile-images/github2.jpg";
 import img4 from "./profile-images/ghibli.jpg";
-import img5 from "./profile-images/iitp.jpg";
 
 import TypingEffect from "react-typing-effect";
 import Icons from "../../components/SocialMediaIcons/Icons";
@@ -16,7 +13,7 @@ import { FaArrowLeft, FaArrowRight } from "react-icons/fa";
 const Home = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
 
-  const images = [img4, img1, img5, img2];
+  const images = [img4];
 
   return (
     <div
